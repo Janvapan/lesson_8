@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+body{
+	font-family: 'Lato';
+}
+
+.container{
+	/* Контейнер меньшмй зворив свідомо, через то що вмене маленький екран і 1920рх зашироко */
+	max-width: 1230px;
+	margin: 0 auto;
+}
+
+.main-title{
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	color: #1E212C;
+}
+
+.header{
+margin-bottom: 40px;
+}
+
+.text p:first-child{
+font-weight: 400;
+line-height: 160%;
+color: #424551;
+margin-bottom: 48px;
+}
+
+.text h2:first-of-type{
+		font-weight: 700;
+		font-size: 28px;
+		line-height: 150%;
+		color: #1E212C;
+		margin-bottom: 24px;
+}
+
+.text ul{
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 160%;
+		color: #424551;
+		margin-bottom: 48px;
+}
+
+.text ul li:not(:last-child){
+	margin-bottom: 4px;
+}
+
+.text ul li::before{
+	background: url('../img/icons/check.png') 0 0 no-repeat;
+	content: "";
+	display: inline-block; 
+	height: 16px;
+	width: 16px;
+	margin-right: 10px;
+}
+
+.second-text h2:first-of-type{
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 150%;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #1E212C;
+	margin-bottom: 8px;
+}
+
+.second-text h3{
+		font-weight: 900;
+		font-size: 46px;
+		line-height: 130%;
+		color: #1E212C;
+		margin-bottom: 16px;
+}
+
+
+.second-text h2:nth-child(3){
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 150%;
+	color: #787A80;
+	margin-bottom: 32px;
+}
+
+.second-text ul{
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 160%;
+	color: #424551;
+	margin-bottom: 32px;
+}
+
+.second-text ul li:nth-child(1)::before{
+	background: url('../img/icons/Star.png') 0 0 no-repeat;
+	content:"";
+	height: 16px;
+	width: 16px;
+	display: inline-block;
+	margin-right: 8px;
+}
+.second-text ul li:nth-child(2)::before{
+	background: url('../img/icons/Play.png') 0 0 no-repeat;
+	content:"";
+	height: 16px;
+	width: 16px;
+	display: inline-block;
+	margin-right: 8px;
+}
+.second-text ul li:nth-child(3)::before{
+	background: url('../img/icons/Profile.png') 0 0 no-repeat;
+	content:"";
+	height: 16px;
+	width: 16px;
+	display: inline-block;
+	margin-right: 8px;
+}
+
+.second-text ul li:not(:last-child){
+	margin-bottom: 4px;
+}
+
+.second-text p{
+	 	font-weight: 400;
+		font-size: 16px;
+		line-height: 160%;
+		color: #424551;
+}
+
+.main{
+	margin-bottom: 40px;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+
+.second-text ul li:hover::before{
+	color: green;
+	opacity: 0.2;
+}
+
+.test{
+background: green;
+padding: 20px;
+text-align: center;
+max-width: 30%;
+margin: 0 auto;
+border-radius: 15px;
+margin-bottom: 50px;
+}
+
+.test__one{
+	visibility: hidden;
+}
+
+.test:hover .test__one{
+	background: grey;
+	visibility: visible;
+	border:1px solid blue;
+	border-radius: 50%;
+}
+
+.link{
+	text-align: center;
+	color: aqua;
+}
+
+.link:active{
+	color: rebeccapurple;
+	text-decoration: underline;
+}
+
+.link_second{
+	color: blue;
+	text-align: center;
+}
+
+.link_second a:visited{
+	color: greenyellow
+}
+
+.contr__link_focus{
+max-width: 50%;
+margin: 0 auto;
+text-align: center;
+margin-bottom: 50px;
+}
+.contr__link_focus-one{
+	color: red;
+	
+}
+
+.contr__link_focus-one:focus{
+	outline: 1px solid red;
+}
+
+.block__test{
+	padding: 50px;
+	background: red;
+	margin: 0 200px 0 200px;
+	display: none;
+}
+
+.block__test:target{
+	display: block;
+}
